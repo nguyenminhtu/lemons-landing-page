@@ -48,6 +48,7 @@ h3 {
   color: #166e38;
   font-size: 40px;
   font-weight: 500;
+  text-align: center;
 }
 
 .content h5 {
@@ -186,4 +187,59 @@ h3 {
 .contact-item:last-child span {
   text-align: left;
   line-height: 28px;
+}
+
+@media only screen and (max-device-width: 480px) {
+  .content img {
+    width: 300px;
+    height: 150px;
+  }
+
+  .content .slogan {
+    font-size: 25px;
+  }
+
+  .content h5 {
+    font-size: 23px;
+  }
+
+  .footer-column {
+    width: 99% !important;
+  }
+
+  .footer-background {
+    height: 900px;
+    background-size: cover;
+  }
+
+  .footer {
+    height: 900px;
+    flex-wrap: wrap;
+  }
+
+  .footer-column:not(:first-child) {
+    align-items: center;
+  }
+
+  .footer-column .contact-info-wrapper {
+    margin-bottom: 0 !important;
+    height: 130px !important;
+  }
+
+  .footer-column p {
+    justify-content: center;
+  }
+
+  .footer-column:nth-child(2) {
+    padding-right: 0 !important;
+    padding-left: 20px;
+  }
+
+  .contact-item:last-child svg {
+    width: 42px;
+  }
+
+  .footer-column:not(:first-child) iframe {
+    width: 100% !important;
+  }
 }
